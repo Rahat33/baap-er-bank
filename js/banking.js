@@ -48,7 +48,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const newTotalBalance = parseFloat(previousBalanceTotal) - parseFloat(newWithdrawAmount);
 
     if (newTotalBalance < '1') {
-        console.log("You dont have enough fund")
+        alert("You dont have enough fund")
     }
     else {
         totalBalance.innerText = newTotalBalance;
